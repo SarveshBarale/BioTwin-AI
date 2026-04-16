@@ -1,61 +1,101 @@
-# BioTwin-AI
+# 🧬 BioTwin AI — Your Digital Health Twin
 
-BioTwin AI: Your Digital Health Twin 🧬
-BioTwin AI is a cutting-edge, real-time health simulation dashboard designed to empower individuals with predictive insights into their biological future. By leveraging machine learning and digital twin technology, the platform analyzes current lifestyle habits—such as activity levels, nutrition, sleep, and stress—to project metabolic risks over a 1-to-5-year horizon.
+**BioTwin AI** is an AI-powered preventive healthcare web app that simulates your future health, analyzes lifestyle risks, and provides personalized insights to help you live healthier.
 
-🌟 Key Features
-Predictive Digital Twin Simulation: Visualizes your future health trajectory based on current habits, allowing you to see the long-term impact of today's choices.
+Built using **Streamlit**, **Machine Learning**, and **Data Visualization**, this app acts as your **real-time digital health twin**.
 
-PCOS/PCOD Risk Intelligence: A dedicated module for women's health that assesses risk factors and provides cycle-aware lifestyle recommendations.
+---
 
-Explainable AI (XAI): Breaks down the "why" behind your health scores, identifying which specific factors (like BMI or sleep deficit) are driving your risk profile.
+## 🚀 Features
 
-Biological Health Age: Computes your biological age versus your chronological age to provide a clear indicator of overall wellness.
+### 📊 Smart Health Dashboard
+- BMI, sleep, steps, diet, and stress tracking  
+- AI-generated **5-year metabolic risk prediction**  
+- Organ-level health impact (heart, lungs, brain, etc.)
 
-Personalized Daily Log & Targets: Tracks steps, nutrition (calories and protein), and stress, providing real-time feedback against personalized targets.
+### 📝 Daily Health Logging
+- Track:
+  - Steps, sleep, exercise  
+  - Calories & protein intake  
+  - Mood, stress, workload  
+- Automatic:
+  - Diet score calculation  
+  - Stress estimation  
+  - Goal tracking & streaks  
 
-Gamified Health Achievements: Earn badges such as "Sleep Master" or "Zen Mode" as you hit your wellness goals.
+### ⏳ Future Simulation
+- Predict your health trajectory for **1–5 years**  
+- Compare:
+  - Current lifestyle vs improved habits  
+  - Custom lifestyle scenarios  
+- Visual risk projections with charts  
 
-Comprehensive Monthly Reports: Automatically generates trends and summaries of your activity and goal adherence over time.
+### 🧠 Explainable AI (XAI)
+- Understand **why your risk is high/low**  
+- Feature importance breakdown  
+- Personalized actionable recommendations  
 
-🚀 Tech Stack
-The application is built using a modern data science and web stack:
+### 🌸 Women's Health Module
+- PCOS/PCOD risk estimation  
+- Hormonal health insights  
+- Cycle-based recommendations  
+- Lifestyle impact tracking on PCOS risk  
 
-Frontend: Streamlit for an interactive, responsive, and high-performance UI.
+### 🏆 Gamification
+- Earn badges like:
+  - 🏃 Step Champion  
+  - 🥗 Nutrition Pro  
+  - 🧘 Zen Mode  
+- Maintain daily streaks  
 
-Analysis & ML: Scikit-learn (Random Forest Classifier) for risk prediction, Pandas, and NumPy for data processing.
+### 📅 Monthly Insights
+- Track trends over time  
+- Correlate habits with risk reduction  
 
-Visualizations: Plotly (Express and Graph Objects) for interactive charts and health gauges.
+---
 
-Security: SHA-256 password hashing and secure JSON-based user data management.
+## 🧠 AI & Data Science
 
-🛠️ Installation & Setup
-Clone the Repository:
+- Model: `RandomForestClassifier`  
+- Synthetic dataset (1000 samples)  
 
-Bash
-git clone https://github.com/sarveshbarale/biotwin-ai.git
+### Features Used
+- Age  
+- BMI  
+- Sleep hours  
+- Daily steps  
+- Diet score  
+- Stress level  
+- Smoking  
+
+### Risk Logic
+The model predicts **metabolic disorder risk probability (%)** based on lifestyle patterns.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Streamlit  
+- **Backend:** Python  
+- **ML:** Scikit-learn  
+- **Visualization:** Plotly  
+- **Data:** Pandas, NumPy  
+- **Storage:** JSON (local file-based DB)  
+- **Auth:** SHA-256 password hashing  
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/biotwin-ai.git
+
+# Navigate into project
 cd biotwin-ai
-Install Dependencies:
-Ensure you have Python installed, then run:
 
-Bash
+# Install dependencies
 pip install -r requirements.txt
-Run the Application:
 
-Bash
+# Run the app
 streamlit run main.py
-⚖️ License
-This project is licensed under the MIT License. You are free to use, copy, and modify the software, provided the original copyright notice and permission notice are included. The software is provided "as is," without warranty of any kind.
-
-👥 Team: Clutch Coders
-Developed for the Nirmaan 4.0 Hackathon at the MIT Academy of Engineering (GDG On Campus):
-
-Himani Bhurkunde
-
-Soham Chaudhary
-
-Sarvesh Barale
-
-Kedar Jasud
-
-Disclaimer: BioTwin AI is an educational simulation tool and is not a substitute for professional medical advice.
